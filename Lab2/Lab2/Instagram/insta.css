@@ -1,0 +1,218 @@
+.main{
+    margin-bottom: 30px;
+    position: absolute;
+    top: 5%;
+    left: 55%;
+    width:350px;
+    height: 400px;
+    background-color: white;
+    border-radius: 0.5px;
+    border: 1px solid grey;
+}
+
+body{
+    background-color: white;
+}
+.image{
+    position: relative;
+    left: 30%;
+    background-color: white;
+}
+section{
+    background-color: white;
+    color: white;
+}
+
+.end{
+    position: absolute;
+    left: 55%;
+    top: 70%;
+    background-color: white;
+    border: 1px solid grey;
+    width: 25%;
+}
+.log1{
+    position: relative;
+    height: 20px;
+    width: 250px;
+    border:none;
+    left: 25px;
+    padding: 8px 8px 8px 8px;
+    margin-bottom: 20px;
+    border-right-width: 0.8px;
+    border-left-width: 0.8px;
+    border-top-width: 0.8px;
+    border-bottom-width: 0.8px;
+    border-right-color: rgb(221, 223, 226);
+    border-left-color: rgb(221, 223, 226);
+    border-top-color: rgb(221, 223, 226);
+    border-bottom-color: rgb(221, 223, 226);
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-radius: 0px;
+    font-size: 16px;
+}
+.log2{
+    position: relative;
+    height: 20px;
+    width: 250px;
+    border:none;
+    left: 25px;
+    padding: 8px 8px 8px 8px;
+    margin-bottom: 20px;
+    border-right-width: 0.8px;
+    border-left-width: 0.8px;
+    border-top-width: 0.8px;
+    border-bottom-width: 0.8px;
+    border-right-color: rgb(221, 223, 226);
+    border-left-color: rgb(221, 223, 226);
+    border-top-color: rgb(221, 223, 226);
+    border-bottom-color: rgb(221, 223, 226);
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-radius: 0px;
+    font-size: 16px;
+}
+#logo{
+    width: 60%;
+    position: relative;
+    left: 18%;
+}
+.l{
+    font-size: 20px;
+    height: 40px;
+    width: 269px;
+    border: none;
+    background-color:dodgerblue;
+    color: white;
+    cursor: pointer;
+    position: relative;
+
+    left: 25px;
+    padding: 8px 8px 8px 8px;
+    margin-bottom: 20px;
+    border-right-width: 0.8px;
+    border-left-width: 0.8px;
+    border-top-width: 0.8px;
+    border-bottom-width: 0.8px;
+    border-right-color: rgb(221, 223, 226);
+    border-left-color: rgb(221, 223, 226);
+    border-top-color: rgb(221, 223, 226);
+    border-bottom-color: rgb(221, 223, 226);
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-radius: 6px;
+
+
+}
+.l:hover{
+    background-color: rgb(60, 151, 42);
+}
+.face{
+    position: relative;
+    left: 10px;
+    margin-left: 80px;
+    color: darkblue;
+    width: 80%;
+    font-family:  bold;
+    cursor: pointer;
+}
+.face:hover {
+    text-decoration: underline 1.5px;
+    text-underline-color: rgb(0, 0, 0);
+    text-underline-offset: 4px;
+
+}
+.instal{
+    position: absolute;
+    bottom: 11.5%;
+    left: 60%;
+
+
+}
+#down1{
+
+    width: 70px;
+}
+#down2{
+    width: 70px;
+}
+#in{
+    position: absolute;
+    left: 60%;
+    bottom: 15%;
+    color: black;
+}
+.bottom{
+    position: absolute;
+    bottom:-15% ;
+    left:50px;
+    width: 200%;
+    color: grey;
+
+}
+
+#forgot{
+    color: darkblue;
+    margin-left: 80px;
+    font-size: 16px;
+    position: relative;
+    left: 20px;
+    cursor: pointer;
+}
+#forgot:hover {
+    text-decoration: underline 1.5px;
+    text-underline-color: rgb(0, 0, 0);
+    text-underline-offset: 4px;
+
+}
+#word{
+    color: dodgerblue;
+    cursor: pointer;
+}
+#word:hover {
+    text-decoration: underline 1.5px;
+    text-underline-color: rgb(0, 0, 0);
+    text-underline-offset: 4px;
+
+}
+section{
+    background-color: white;
+}
+.below{
+    width: 50%;
+
+}
+#sentence{
+    color: black;
+    position: relative;
+    left: 20px;
+}
+#f{
+   position: relative;
+    bottom: -10%;
+    left: 18%;
+}
+.line{
+    border: 1px solid grey;
+    width: 35%;
+    display: inline-block;
+    margin-left: 206px;
+
+}
+.line1{
+    border: 1px solid grey;
+    width: 35%;
+    margin-top: -30px;
+}
+#or{
+    margin-left: 139px;
+    margin-top: -25px;
+    color: grey;
+}
