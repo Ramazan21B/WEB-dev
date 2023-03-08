@@ -2,9 +2,6 @@ export interface Product {
   id: number;
   name: string;
   price: number;
-  category: string;
-  visible: boolean;
-  liked: boolean;
   description: string;
   rating:number;
   images:Array<string>;
@@ -16,9 +13,6 @@ export const products = [
     id: 1,
     name: 'Смартфон Apple iPhone 13 128Gb черный',
     price: 384270,
-    category: 'Mobile phone',
-    visible: true,
-    liked: false,
     description: 'технология NFC: Да\n' +
         'цвет: черный\n' +
         'тип экрана: OLED, Super Retina XDR\n' +
@@ -37,9 +31,6 @@ export const products = [
     id: 2,
     name: 'Смартфон Xiaomi Redmi Note 10 Pro 8 ГБ/256 ГБ серый',
     price: 128350,
-    category: 'Mobile phone',
-    visible: true,
-    liked: false,
     description: 'технология NFC: Да\n' +
         'цвет: серый\n' +
         'тип экрана: цветной AMOLED, сенсорный\n' +
@@ -58,11 +49,7 @@ export const products = [
     id: 3,
     name: 'Смартфон Samsung Galaxy A33 5G 6 ГБ/128 ГБ черный',
     price: 129855,
-    category: 'Mobile phone',
-    visible: true,
-    liked: false,
-    description: 'тех' +
-        'нология NFC: Да\n' +
+    description: 'технология NFC: Да\n' +
         'цвет: черный\n' +
         'тип экрана: Super AMOLED, сенсорный, Corning Gorilla Glass 5\n' +
         'диагональ: 6.4 дюйм\n' +
@@ -80,9 +67,6 @@ export const products = [
     id: 4,
     name: 'Смартфон Apple iPhone 13 128Gb белый',
     price: 374699,
-    category: 'Mobile phone',
-    visible: true,
-    liked: false,
     description: 'технология NFC: Да\n' +
         'цвет: белый\n' +
         'тип экрана: OLED, Super Retina XDR\n' +
@@ -101,9 +85,6 @@ export const products = [
     id: 5,
     name: 'Смартфон Samsung Galaxy A03 Core 2 ГБ/32 ГБ черный',
     price: 46360,
-    category: 'Mobile phone',
-    visible: true,
-    liked: false,
     description: 'технология NFC: Нет\n' +
         'цвет: черный\n' +
         'тип экрана: PLS TFT LCD сенсорный, мультитач\n' +
@@ -122,9 +103,6 @@ export const products = [
     id: 6,
     name: 'Смартфон Apple iPhone 13 128Gb розовый',
     price: 377000,
-    category: 'Mobile phone',
-    visible: true,
-    liked: false,
     description: 'технология NFC: Да\n' +
         'цвет: розовый\n' +
         'тип экрана: OLED, Super Retina XDR\n' +
@@ -143,9 +121,6 @@ export const products = [
     id: 7,
     name: 'Смартфон Samsung Galaxy A03 Core 2 ГБ/32 ГБ медный',
     price: 46625,
-    category: 'Mobile phone',
-    visible: true,
-    liked: false,
     description: 'технология NFC: Нет\n' +
         'цвет: бронзовый\n' +
         'тип экрана: PLS TFT LCD сенсорный, мультитач\n' +
@@ -164,9 +139,6 @@ export const products = [
     id: 8,
     name: 'Смартфон Xiaomi Redmi Note 11S 8 ГБ/128 ГБ серый',
     price: 116609,
-    category: 'Mobile phone',
-    visible: true,
-    liked: false,
     description: 'технология NFC: Нет\n' +
         'цвет: серый\n' +
         'тип экрана: AMOLED, сенсорный, мультитач\n' +
@@ -185,9 +157,6 @@ export const products = [
     id: 9,
     name: 'Смартфон Samsung Galaxy A13 4 ГБ/64 ГБ белый',
     price: 80635,
-    category: 'Mobile phone',
-    visible: true,
-    liked: false,
     description: 'технология NFC: Да\n' +
         'цвет: белый\n' +
         'тип экрана: PLS TFT LCD сенсорный, мультитач\n' +
@@ -206,9 +175,6 @@ export const products = [
     id: 10,
     name: 'Смартфон Apple iPhone 14 128Gb серебристый',
     price: 421580,
-    category: 'Mobile phone',
-    visible: true,
-    liked: false,
     description: 'технология NFC: Да\n' +
         'цвет: серебристый\n' +
         'тип экрана: OLED, Super Retina XDR display\n' +
@@ -227,9 +193,6 @@ export const products = [
     id: 11,
     name: 'MAGNIT АВ 6013 серый',
     price: 3300,
-    category: 'Teapot',
-    visible: true,
-    liked: false,
     description: 'тип: электрочайник\n' +
         'объем: 2.2 л\n' +
         'мощность: 2200 Вт\n' +
@@ -245,9 +208,6 @@ export const products = [
     id: 12,
     name: 'Термопот Brando BR-TP68 черный',
     price: 12988,
-    category: 'Teapot',
-    visible: true,
-    liked: false,
     description: 'тип: термопот\n' +
         'объем: 6.8 л\n' +
         'мощность: 750 Вт\n' +
@@ -257,115 +217,8 @@ export const products = [
     rating: 4,
     images: ['https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/hfc/hf9/67937106788382/termopot-brando-br-tp68-chernyi-108462994-1.jpg'],
     link: 'https://kaspi.kz/shop/p/termopot-brando-br-tp68-chernyi-108462994/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_search_kaspi_brand_desktop&gclid=Cj0KCQiArsefBhCbARIsAP98hXQi1FYoPvKMpHcv_KeXZBTEs_Q_OkuEUv2jBTghOGJKTyqeqKv4-JcaAsvtEALw_wcB#!/item'
-  },
-  {
-    id: 13,
-    name: 'Электрочайник Shivaki SH-KE-2041 черный',
-    price: 5490,
-    category: 'Teapot',
-    visible: true,
-    liked: false,
-    description: 'тип: электрочайник\n' +
-        'объем: 1.8 л\n' +
-        'мощность: 1500 Вт\n' +
-        'материал корпуса: пластик\n' +
-        'фильтр от накипи: Да\n' +
-        'цвет: черный',
-    rating: 5,
-    images: ['https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h8a/h61/68231178813470/elektrochainik-shivaki-sh-ke-2041-chernyi-108583670-1.jpg'],
-    link: 'https://kaspi.kz/shop/p/elektrochainik-shivaki-sh-ke-2041-chernyi-108583670/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_search_kaspi_brand_desktop&gclid=Cj0KCQiAgOefBhDgARIsAMhqXA5uaRWlKXhafWV-sjIw1ErriOZU61hBwJfeIgUa_GWZLskhpxlKEzgaAgrVEALw_wcB#!/item'
-  },
-  {
-    id: 14,
-    name: 'Masima MS-1072 черный',
-    price: 7214,
-    category: 'Teapot',
-    visible: true,
-    liked: false,
-    description: 'тип: электрочайник\n' +
-        'объем: 2.2 л\n' +
-        'мощность: 1800 Вт\n' +
-        'материал корпуса: нержавеющая сталь\n' +
-        'фильтр от накипи: Нет\n' +
-        'цвет: черный',
-    rating: 5,
-    images: ['https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h96/h40/45262793637918/masima-ms-1072-cernyj-102225107-1-Container.jpg'],
-    link: 'https://kaspi.kz/shop/p/masima-ms-1072-chernyi-102225107/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_search_kaspi_brand_desktop&gclid=Cj0KCQiAgOefBhDgARIsAMhqXA5uaRWlKXhafWV-sjIw1ErriOZU61hBwJfeIgUa_GWZLskhpxlKEzgaAgrVEALw_wcB#!/item'
-  },
-  {
-    id: 15,
-    name: 'TEA POT чайник 1 л, стекло',
-    price: 1780,
-    category: 'Teapot',
-    visible: true,
-    liked: false,
-    description: 'тип: чайник\n' +
-        'объем: 1 л\n' +
-        'цвет: прозрачный\n' +
-        'материал: стекло, ,дерево',
-    rating: 5,
-    images: ['https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h73/h8a/47438260404254/ikea-bocenok-rozental-1l-103004200-1.jpg'],
-    link: 'https://kaspi.kz/shop/p/tea-pot-chainik-1-l-steklo-103004200/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_search_kaspi_brand_desktop&gclid=Cj0KCQiAgOefBhDgARIsAMhqXA5uaRWlKXhafWV-sjIw1ErriOZU61hBwJfeIgUa_GWZLskhpxlKEzgaAgrVEALw_wcB#!/item'
-  },
-  {
-    id: 16,
-    name: 'Ноутбук Acer Nitro 5 AN515-57 NH.QEKER.004 черный',
-    price: 389800,
-    category: 'Notebook',
-    visible: true,
-    liked: false,
-    description: 'диагональ экрана: 15.6 дюйм\n' +
-        'процессор: Intel Core i5 11400H\n' +
-        'видеокарта: NVIDIA GeForce GTX 1650\n' +
-        'размер оперативной памяти: 16 ГБ\n' +
-        'тип жесткого диска: SSD\n' +
-        'общий объем накопителей: 512 ГБ',
-    rating: 5,
-    images: ['https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h2e/hc4/67236399185950/acer-nitro-5-an515-57-nh-qeker-004-chernyi-108194028-1.jpg',
-      'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h6b/he7/67236399448094/acer-nitro-5-an515-57-nh-qeker-004-chernyi-108194028-2.jpg',
-      'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h04/h5c/67236396793886/acer-nitro-5-an515-57-nh-qeker-004-chernyi-108194028-4.jpg'],
-    link: 'https://kaspi.kz/shop/p/acer-nitro-5-an515-57-nh-qeker-004-chernyi-108194028/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_search_kaspi_brand_desktop&gclid=Cj0KCQiAgOefBhDgARIsAMhqXA5uaRWlKXhafWV-sjIw1ErriOZU61hBwJfeIgUa_GWZLskhpxlKEzgaAgrVEALw_wcB#!/item'
-  },
-  {
-    id: 17,
-    name: 'Ноутбук Apple MacBook Air 13 MGND3 золотистый',
-    price: 490450,
-    category: 'Notebook',
-    visible: true,
-    liked: false,
-    description: 'диагональ экрана: 13.3 дюйм\n' +
-        'процессор: Apple M1\n' +
-        'видеокарта: Apple M1 8 core\n' +
-        'размер оперативной памяти: 8 ГБ\n' +
-        'тип жесткого диска: SSD\n' +
-        'общий объем накопителей: 256 ГБ',
-    rating: 5,
-    images: ['https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/hfd/h54/33286638272542/apple-macbook-air-2020-13-3-mgnd3-zolotistyj-100797576-1-Container.jpg',
-      'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/hd5/h5c/51914181050398/apple-macbook-air-2020-13-3-mgnd3-zolotistyj-100797576-2-Container.jpg',
-      'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/hbb/h88/51914181509150/apple-macbook-air-13-mgnd3-zolotistyj-100797576-4.jpg'],
-    link: 'https://kaspi.kz/shop/p/apple-macbook-air-13-mgnd3-zolotistyi-100797576/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_search_kaspi_brand_desktop&gclid=Cj0KCQiAgOefBhDgARIsAMhqXA5uaRWlKXhafWV-sjIw1ErriOZU61hBwJfeIgUa_GWZLskhpxlKEzgaAgrVEALw_wcB#!/item'
-  },
-  {
-    id: 18,
-    name: 'Ноутбук ASUS TUF Gaming A15 FA506IHRB-HN084 90NR07G7-M008C0 черный',
-    price: 349930,
-    category: 'Notebook',
-    visible: true,
-    liked: false,
-    description: 'диагональ экрана: 15.6 дюйм\n' +
-        'процессор: AMD Ryzen 5 4600H\n' +
-        'видеокарта: nVidia GeForce GTX1650\n' +
-        'размер оперативной памяти: 8 ГБ\n' +
-        'тип жесткого диска: SSD\n' +
-        'общий объем накопителей: 512 ГБ',
-    rating: 5,
-    images: ['https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h6b/h33/62100002701342/asus-tuf-gaming-a15-fa506ihrb-hn084-90nr07g7-m008c0-cernyj-106255184-1.jpg',
-      'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h42/h7a/62100003160094/asus-tuf-gaming-a15-fa506ihrb-hn084-90nr07g7-m008c0-cernyj-106255184-2.jpg',
-      'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/hc1/ha3/62100004077598/asus-tuf-gaming-a15-fa506ihrb-hn084-90nr07g7-m008c0-cernyj-106255184-4.jpg'],
-    link: 'https://kaspi.kz/shop/p/asus-tuf-gaming-a15-fa506ihrb-hn084-90nr07g7-m008c0-chernyi-106255184/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_search_kaspi_brand_desktop&gclid=Cj0KCQiAgOefBhDgARIsAMhqXA5uaRWlKXhafWV-sjIw1ErriOZU61hBwJfeIgUa_GWZLskhpxlKEzgaAgrVEALw_wcB#!/item'
   }
 ];
-
 
 /*
 Copyright Google LLC. All Rights Reserved.
