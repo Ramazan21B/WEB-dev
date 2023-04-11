@@ -20,8 +20,8 @@ import { CategoryComponent } from './category/category.component';
         HttpClientModule,
         RouterModule.forRoot([
             {path: '',component:CategoryComponent},
-            {path: 'product-list', component: ProductListComponent},
-            {path: 'products/:productId', component: ProductDetailsComponent},
+            {path: 'products/:Category', component: ProductListComponent},
+            {path: 'products/:Category/:productId', component: ProductDetailsComponent},
             {path: 'cart', component: CartComponent},
             {path: 'shipping', component: ShippingComponent},
         ])

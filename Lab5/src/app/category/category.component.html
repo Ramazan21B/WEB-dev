@@ -1,1 +1,5 @@
-<p>Category works</p>
+<div class="main">
+<div class="" *ngFor="let category of categories" [routerLink]="['/products', category.category]">
+    <img src="{{category.imagelink}}" width="50px" height="50px">
+    {{category.category}}</div>
+</div>

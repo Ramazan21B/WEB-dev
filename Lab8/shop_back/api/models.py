@@ -8,6 +8,8 @@ class Product(models.Model):
     description = models.TextField(max_length=255)
     count = models.IntegerField()
     is_active = models.BooleanField()
+    category = models.CharField(max_length=255, default='')
+
     def to_json(self):
         return {
             'id': self.id,
