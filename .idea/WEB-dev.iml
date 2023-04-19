@@ -10,8 +10,9 @@
       <excludeFolder url="file://$MODULE_DIR$/venv" />
       <excludeFolder url="file://$MODULE_DIR$/Lab_8/venv" />
       <excludeFolder url="file://$MODULE_DIR$/Lab9/venv" />
+      <excludeFolder url="file://$MODULE_DIR$/Lab10/hh_back/venv" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.11 (WEB-dev) (3)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.11 (WEB-dev) (4)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>

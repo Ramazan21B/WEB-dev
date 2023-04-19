@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http.response import JsonResponse
-from api.models import Product, Category
+from Lab8.shop_back.api.models import Product, Category
 # Create your views here.
 
 def product_list(request):

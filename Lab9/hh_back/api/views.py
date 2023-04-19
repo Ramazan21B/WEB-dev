@@ -30,12 +30,14 @@ def get_vacancy(request,id):
         vacancy = Vacancy.objects.get(id = id)
     except Vacancy.DoesNotExist:
         return JsonResponse({'message': "Vacancy by this id does not exist"}, status=400)
+    if request.method == "GET":
+        return JsonResponse(vacancy.to_json())
 
 @csrf_exempt
 def vacancy_by_company(request,id):
     try:
         company = Company.objects.get(id = id)
-        vacancies = company.objects.all()
+        vacancies = company.vacancies.all()
         vacancies_json = [v.to_json() for v in vacancies]
     except Company.DoesNotExist:
         return JsonResponse({'message': "vacancy by this id does not exist"}, status=400)
